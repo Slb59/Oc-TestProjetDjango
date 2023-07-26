@@ -1,0 +1,6 @@
+# no environnement, ide files
+.venv
+.env
+
+# no database
+db.sqlite3
