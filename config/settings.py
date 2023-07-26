@@ -34,7 +34,7 @@ ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=[])
 # Application definition
 LIBRARY_APP = [
     "project.account.apps.AccountConfig",
-    "project.library.apps.HelpdeskConfig",
+    "project.library.apps.LibraryConfig",
     ]
 
 DJANGO_APP = [
@@ -110,6 +110,9 @@ AUTH_PASSWORD_VALIDATORS = [
         + "NumericPasswordValidator",
     },
 ]
+
+# Configuration de of the authentication
+AUTH_USER_MODEL = "account.User"
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/

@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 django = "*"
 pytest-django = "*"
-environ = "*"
+django-environ = "*"
 
 [dev-packages]
 
