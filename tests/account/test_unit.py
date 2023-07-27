@@ -1,8 +1,9 @@
+# from datetime import datetime 
 from django.test import TestCase
 from django.db.utils import IntegrityError
 
 
-from project.account.models import User
+from project.account.models import User, Profile
 
 
 class UserTestCase(TestCase):
@@ -29,7 +30,6 @@ class UserTestCase(TestCase):
             User.objects.create_user(
                 username='testuser2', password='98765abc',
                 email='testuser2@gmail.com',
-                post_description='Description',
                 birth_date='2023-01-01'
             )
         self.assertEqual(IntegrityError, type(raised.exception))
