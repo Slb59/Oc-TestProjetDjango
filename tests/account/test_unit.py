@@ -2,7 +2,7 @@ from django.test import TestCase
 from django.db.utils import IntegrityError
 
 
-from .models import User
+from project.account.models import User
 
 
 class UserTestCase(TestCase):

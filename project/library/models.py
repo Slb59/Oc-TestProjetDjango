@@ -1,7 +1,7 @@
 from django.db import models
 # from django.utils import timezone
 
-from mixin import DateFields
+from ..mixin import DateFields
 
 
 class Book(DateFields):

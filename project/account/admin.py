@@ -2,6 +2,8 @@ from django.contrib import admin
 from django.contrib.auth import get_user_model
 from django.contrib.auth import admin as auth_admin
 
+from .models import Profile
+
 User = get_user_model()
 
 
@@ -21,3 +23,6 @@ class UserAdmin(auth_admin.UserAdmin):
             'brith_date',
             "can_be_contacted", "can_data_be_shared"
             ]}),)
+
+
+admin.site.register(Profile)

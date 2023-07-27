@@ -2,8 +2,10 @@ import pytest
 
 from django.urls import reverse
 from django.test import Client
-from library.models import Book
+
 from pytest_django.asserts import assertTemplateUsed
+
+from project.library.models import Book
 
 
 @pytest.mark.django_db  

@@ -1,7 +1,7 @@
 import pytest
 
 from django.test import Client
-from library.models import Book
+from project.library.models import Book
 
 
 @pytest.mark.django_db

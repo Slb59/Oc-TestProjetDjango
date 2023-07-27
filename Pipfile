@@ -8,6 +8,10 @@ django = "*"
 pytest-django = "*"
 django-environ = "*"
 django-phonenumber-field = "*"
+phonenumberslite = "*"
+pillow = "*"
+coverage = "*"
+pytest-cov = "*"
 
 [dev-packages]
 
